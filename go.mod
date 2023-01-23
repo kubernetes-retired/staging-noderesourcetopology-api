@@ -4,7 +4,7 @@ module k8s.io/noderesourcetopology-api
 
 go 1.19
 
-require k8s.io/code-generator v0.0.0-20230125045835-95832770cbe7
+require k8s.io/code-generator v0.0.0
 
 require (
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
@@ -24,7 +24,7 @@ require (
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/mod v0.7.0 // indirect
-	golang.org/x/sys v0.3.0 // indirect
+	golang.org/x/sys v0.4.0 // indirect
 	golang.org/x/tools v0.4.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
@@ -35,4 +35,7 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace k8s.io/code-generator => k8s.io/code-generator v0.0.0-20230125045835-95832770cbe7
+replace (
+	k8s.io/code-generator => ../code-generator
+	k8s.io/noderesourcetopology-api => ../noderesourcetopology-api
+)
