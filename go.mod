@@ -4,7 +4,7 @@ module k8s.io/noderesourcetopology-api
 
 go 1.19
 
-require k8s.io/code-generator v0.0.0-20230214140507-dfb602f3353d
+require k8s.io/code-generator v0.27.0-alpha.2
 
 require (
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
@@ -37,4 +37,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace k8s.io/code-generator => k8s.io/code-generator v0.0.0-20230214140507-dfb602f3353d
+replace k8s.io/code-generator => k8s.io/code-generator v0.27.0-alpha.2
